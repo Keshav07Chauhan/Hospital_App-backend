@@ -13,8 +13,8 @@ const otpModel = require('../models/otp')
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'otp788935@gmail.com', // this is the email that will be used to send the email.
-        pass: 'lofu tmez fnwi lhoh', //this is the password that is created in app passwords in gmail setting options.
+        user: 'testingself12@gmail.com', // this is the email that will be used to send the email.
+        pass: 'pmuq kqfb rzut bnep', //this is the password that is created in app passwords in gmail setting options.
     },
 });
 
@@ -142,7 +142,7 @@ resendOtp = async(req,res)=>{
           
         }
         const mailOptions = {
-            from: 'otp788935@gmail.com',
+            from: 'testingself12@gmail.com',
             to: email,
             subject: 'OTP for Registration',
             text: `Your OTP for registration is ${otp}`,
@@ -230,7 +230,7 @@ sendOtp = async(req,res)=>{
           
         }
         const mailOptions = {
-            from: 'otp788935@gmail.com',
+            from: 'testingself12@gmail.com',
             to: email,
             subject: 'OTP for Registration',
             text: `Your OTP for registration is ${otp}`,
@@ -347,7 +347,7 @@ sendOtppassword = async(req,res)=>{
         userdata.otpExpires=otpExpires
         await userdata.save()
         const mailOptions = {  // defining the otp mail structure.
-            from: 'otp788935@gmail.com',
+            from: 'testingself12@gmail.com',
             to: email,
             subject: 'OTP for Registration',
             text: `Your OTP for registration is ${otp}`,

@@ -46,7 +46,7 @@ app.use(patientRoutes)
 
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/doctorsapp").then(()=>{
+mongoose.connect("mongodb+srv://testingself12:bWfDBddAQy6LZRM5@cluster0.ziyvwmr.mongodb.net/doctorsapp?retryWrites=true&w=majority&appName=Cluster0").then(()=>{
     console.log("connected to mongoDB");
 }).catch((err)=>{
     console.log(err);

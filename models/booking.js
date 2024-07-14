@@ -7,7 +7,7 @@ const medicine = new Schema({
     name:{ 
     type :String
     },
-    qunatity: 
+    quantity: 
     {
         type:Number
     },
